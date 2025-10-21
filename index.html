@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendario Attività</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Calendario Attività Scolastiche</h1>
+  </div>
+  <div class="container">
+    <div class="calendar-section">
+      <div class="calendar-header-bar">
+        <h2 id="monthYear"></h2>
+        <div class="calendar-controls">
+          <button class="arrow-btn" id="prevMonth">&#8592;</button>
+          <button class="arrow-btn" id="nextMonth">&#8594;</button>
+        </div>
+      </div>
+      <table class="calendar">
+        <thead>
+          <tr>
+            <th>LUN</th>
+            <th>MAR</th>
+            <th>MER</th>
+            <th>GIO</th>
+            <th>VEN</th>
+            <th>SAB</th>
+            <th>DOM</th>
+          </tr>
+        </thead>
+        <tbody id="calendarBody">
+          <!-- Popolato da JS -->
+        </tbody>
+      </table>
+    </div>
+    <div class="event-section">
+      <h3>Attività del giorno</h3>
+      <div class="event-list" id="eventList">
+        <div class="event-empty">Seleziona una data per vedere le attività...</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">© 2025-2026 Calendario Attività – ElModou</div>
+  <script src="calendar.js"></script>
+</body>
+</html>
